@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.stats-container {
+  background: linear-gradient(to bottom,#faf9fa, #B5B3CF); /* 보라색 그라데이션 배경 */
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 70px auto; /*화면 상단에서 내려오는 정도*/
+  margin-left: 150px;
+  width: 70%;
+  max-width: 400px;
+}
+
+.stats-title {
+  color: rgb(3, 0, 0);
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 150px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #8b95e2;
+  color: #fff;
+  width: 150px;
+  height: 60px;
+  margin-right: 50px;
+  background: linear-gradient(to bottom, #bec4f5, #5A64B5); /* 그라데이션 효과 */
+}
+
+.buttons button.active {
+  background-color: #3d4583; /* 선택된 버튼의 색상 변경 */
+}
+
+.buttons button:hover {
+  background-color: #8b95e2;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 0px;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #5A64B5; /* 배경색 지정 */
+  padding: 100px; /* 내용 주위 여백 추가 */
+  height: 40vh; /* 화면 세로 높이의 40% 만큼 height 설정 */
+}
+
+.initial-screen-button {
+  background: linear-gradient(to bottom,#faf9fa, #5A64B5); /* 보라색 그라데이션 배경 */
+  position: absolute; /* 위치를 설정하기 위해 절대 위치 지정 */
+  top: 70px; /* 과거 혼잡도 통계 글씨와 같은 높이에 위치 */
+  right: 150px; /* 화면의 가장 우측에 위치 */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  width: 150px;
+  height: 60px;
+}
+
