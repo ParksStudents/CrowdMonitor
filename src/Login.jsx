@@ -1,5 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './index.css';
+
+// 로그인 로직 시범수행을 위한 더미 데이터
+const Admin = {
+    email: 'admin@gmail.com',
+    pw: 'a1234'
+}
 
 // export default function
 export function Login() {
@@ -8,7 +14,16 @@ export function Login() {
 
     const [emailValid, setEmailValid] = useState(false);
     const [pwValid, setPwValid] = useState(false);
+    const [notAllow, setNotAllow] = useState(true);
     
+    useEffect(()=>{
+        if (emailValid&&pwValid) {
+            setNotAllow(false);
+            return;
+        } // 버튼 비활성화 해제
+        setNotAllow(true); // 디폴트 : 비활성화
+    }, [emailValid, pwValid]); 
+    //이메일, 비밀번호 state 변경될 때마다 버튼 활성화 여부 체크
 
     const handleEmail = (e)=> {
         setEmail(e.target.value)
@@ -30,12 +45,26 @@ export function Login() {
             setPwValid(false);
         }
     }
-
+    const onClickConfirmButton = ()=> {
+        if (email === Admin.email && pw === Admin.pw) {
+            alert('로그인에 성공했습니다.');
+        } // ===: Strict Equal Operator
+        // 추후 메인페이지 이동 로직 추가
+        else {
+            alert("등록되지 않은 회원입니다.");
+        }
+    }
+    
+    
     return (
         <div className='page'> 
-            <div className='titleWrap'>
-                이메일과 비밀번호를 <br/>입력해주세요
+            <div>
+                <img className='loginImg' src="img/icon-login.png" />
             </div>
+            <div className='titleWrap'>
+                로그인
+            </div>
+            
 
             <div className='contentWrap'>
                 <div className='inputTitle'>이메일 주소</div>
@@ -70,7 +99,11 @@ export function Login() {
             </div>
 
             <div>
-                <button disabled={true} className='bottomButton'>로그인</button>
+                <button 
+                    onClick={onClickConfirmButton}
+                    disabled={notAllow} 
+                    className='bottomButton'>
+                확인</button>
             </div>
         </div>
     )
