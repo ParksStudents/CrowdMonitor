@@ -1,17 +1,62 @@
+.App {
+  text-align: center;
+  background-color: purple;
+  width: 120px;
+  height: 40px;
+}
 
-    position: absolute;
-    top: 24px;
-    right: 70px;
-    background-color: rgb(172, 117, 172); /* 배경색 */
-    color: white; /* 글자 색상 */
-    padding: 7px 20px; /* 안쪽 여백 */
-    text-align: center; /* 텍스트 가운데 정렬 */
-    text-decoration: none; /* 텍스트에 밑줄 없음 */
-    display: inline-block; /* 인라인 요소로 표시 */
-    font-size: 20px; /* 글자 크기 */
-    cursor: pointer; /* 마우스 커서 모양 변경 */
-    border-radius: 5px; /* 버튼 모서리 둥글게 만들기 */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.stroke-text {
+  position: absolute;
+  top: 40px;
+  left: 90px;
+  border: 2px solid black;
+  width: 300px;
+  height: 70px;
+  padding-top: 6px;
+  font-size: 45px; 
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.login{
+  position: absolute;
+  top: 24px;
+  right: 250px;
+  background-color: rgb(172, 117, 172); /* 배경색 */
+  color: white; /* 글자 색상 */
+  padding: 7px 20px; /* 안쪽 여백 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  text-decoration: none; /* 텍스트에 밑줄 없음 */
+  display: inline-block; /* 인라인 요소로 표시 */
+  font-size: 20px; /* 글자 크기 */
+  cursor: pointer; /* 마우스 커서 모양 변경 */
+  border-radius: 5px; /* 버튼 모서리 둥글게 만들기 */
+}
+.new{
+  position: absolute;
+  top: 24px;
+  right: 70px;
+  background-color: rgb(172, 117, 172); /* 배경색 */
+  color: white; /* 글자 색상 */
+  padding: 7px 20px; /* 안쪽 여백 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  text-decoration: none; /* 텍스트에 밑줄 없음 */
+  display: inline-block; /* 인라인 요소로 표시 */
+  font-size: 20px; /* 글자 크기 */
+  cursor: pointer; /* 마우스 커서 모양 변경 */
+  border-radius: 5px; /* 버튼 모서리 둥글게 만들기 */
+}
   .App-header {
     background-color: #fff;
     min-height: 100vh;
