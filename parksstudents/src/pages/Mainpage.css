@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: purple;
   width: 120px;
   height: 40px;
 }
@@ -20,42 +19,51 @@
   position: absolute;
   top: 40px;
   left: 90px;
-  border: 2px solid black;
-  width: 300px;
-  height: 70px;
-  padding-top: 6px;
+  border: none;
+  padding: 10px 20px;
   font-size: 45px; 
   color: black;
-  border-radius: 8px;
   font-weight: bold;
+  background: linear-gradient(to bottom,#faf9fa, #B5B3CF); /* 보라색 그라데이션 배경 */ 
+  border-radius: 10px;
+  width: 70%;
+  max-width: 400px;
 }
+
 .login{
   position: absolute;
-  top: 24px;
-  right: 250px;
-  background-color: rgb(172, 117, 172); /* 배경색 */
+  top: 40px;
+  left: 1080px;
+  background: linear-gradient(to bottom,#faf9fa, #5A64B5); 
   color: white; /* 글자 색상 */
-  padding: 7px 20px; /* 안쪽 여백 */
+  padding: 10px 20px;
   text-align: center; /* 텍스트 가운데 정렬 */
   text-decoration: none; /* 텍스트에 밑줄 없음 */
   display: inline-block; /* 인라인 요소로 표시 */
   font-size: 20px; /* 글자 크기 */
   cursor: pointer; /* 마우스 커서 모양 변경 */
-  border-radius: 5px; /* 버튼 모서리 둥글게 만들기 */
+  border-radius: 10px; /* 버튼 모서리 둥글게 만들기 */
+  border: none;  
+  width: 150px;
+  height: 60px;
 }
-.new{
+
+.newaccount{
   position: absolute;
-  top: 24px;
-  right: 70px;
-  background-color: rgb(172, 117, 172); /* 배경색 */
+  top: 40px;
+  left: 1250px;
+  background: linear-gradient(to bottom,#faf9fa, #5A64B5); 
   color: white; /* 글자 색상 */
-  padding: 7px 20px; /* 안쪽 여백 */
+  padding: 10px 20px;
   text-align: center; /* 텍스트 가운데 정렬 */
   text-decoration: none; /* 텍스트에 밑줄 없음 */
   display: inline-block; /* 인라인 요소로 표시 */
   font-size: 20px; /* 글자 크기 */
   cursor: pointer; /* 마우스 커서 모양 변경 */
-  border-radius: 5px; /* 버튼 모서리 둥글게 만들기 */
+  border-radius: 10px; /* 버튼 모서리 둥글게 만들기 */
+  border: none;  
+  width: 150px;
+  height: 60px;
 }
   .App-header {
     background-color: #fff;
@@ -69,133 +77,157 @@
   }
   .cam{
     position: absolute;
-    top: 140px;
-    left: 45px;
+    top: 155px;
+    left: 90px;
     width: 740px; /* 너비 */
-    height: 435px; /* 높이 */
-    background-color: rgb(229, 220, 220); /* 배경색 */
-    border: 2px solid black; /* 테두리 설정 */
+    height: 440px; /* 높이 */
+    background-color: #EEEEEE; /* 배경색 */
+    border: none; /* 테두리 설정 */
     border-radius: 3px;
     border: none;
   }
   .exp{
     position:absolute;
-    top: 585px;
-    left: 65px;
-    font-size: 15px;
+    top: 605px;
+    left: 90px;
+    font-size: 18px;
     color: black;
+    font-weight: bold;
   }
   .cctv1{
     position: absolute;
-    top: 625px;
-    left: 140px;
-    border-radius:5px;
+    top: 640px;
+    left: 100px;
+    border-radius: 10px;
     font-size: 34px;
     padding: 10px 10px;
     text-align: center;
-    color: white;
-    background-color: rgb(172, 117, 172);
+    cursor: pointer;
+    background-color: #8b95e2;
+    color: #fff;
+    background: linear-gradient(to bottom, #bec4f5, #5A64B5); /* 그라데이션 효과 */
+    width: 150px;
+    height: 150px;
+    border: none;
   }
   .cctv2{
     position: absolute;
-    top: 625px;
+    top: 640px;
     left: 270px;
-    border-radius:5px;
+    border-radius: 10px;
     font-size: 34px;
     padding: 10px 10px;
     text-align: center;
-    color: white;
-    background-color:  rgb(172, 117, 172);
+    cursor: pointer;
+    background-color: #8b95e2;
+    color: #fff;
+    background: linear-gradient(to bottom, #bec4f5, #5A64B5); /* 그라데이션 효과 */
+    width: 150px;
+    height: 150px;
+    border: none;
   }
   .cctv3{
     position: absolute;
-    top: 625px;
-    left: 400px;
-    border-radius:5px;
+    top: 640px;
+    left: 440px;
+    border-radius: 10px;
     font-size: 34px;
     padding: 10px 10px;
     text-align: center;
-    color: white;
-    background-color: rgb(172, 117, 172);
+    cursor: pointer;
+    background-color: #8b95e2;
+    color: #fff;
+    background: linear-gradient(to bottom, #bec4f5, #5A64B5); /* 그라데이션 효과 */
+    width: 150px;
+    height: 150px;
+    border: none;
   }
   .cctv4{
     position: absolute;
-    top: 625px;
-    left: 530px;
-    border-radius:5px;
+    top: 640px;
+    left: 610px;
+    border-radius: 10px;
     font-size: 34px;
     padding: 10px 10px;
     text-align: center;
-    color: white;
-    background-color: rgb(172, 117, 172);
+    cursor: pointer;
+    background-color: #8b95e2;
+    color: #fff;
+    background: linear-gradient(to bottom, #bec4f5, #5A64B5); /* 그라데이션 효과 */
+    width: 150px;
+    height: 150px;
+    border: none;
   }
   .cnt{
     position: absolute;
-    top: 115px;
-    left: 1000px;
+    top: 160px;
+    left: 900px;
     color: black;
     font-size: 30px;
+    font-weight: bold;
   
   }
   .report{
     position: absolute;
-    bottom: 65px;
-    right:120px;
+    top: 530px;
+    left: 900px;
     color: black;
     font-size: 17px;
   
   }
   .send{
     position: absolute;
-    bottom: 25px;
-    right: 350px;
+    top: 820px;
+    left: 1035px;
     border-radius:5px;
     font-size: 20px;
     padding: 5px 25px;
     text-align: center;
     color: white;
-    background-color: rgb(172, 117, 172);
+    background-color: #5A64B5;
     border: none;
   }
   .res{
     position:absolute;
-    bottom: 25px;
-    right: 250px;
+    top: 820px;
+    left: 1135px;
     border-radius:5px;
     font-size: 20px;
     padding: 5px 25px;
     text-align: center;
     color: white;
-    background-color: rgb(172, 117, 172);
+    background-color: #5A64B5;
     border: none;
   }
   .warn{
     position: absolute;
-    top: 167px;
-    right: 110px;
-    width: 490px; /* 너비 */
-    height: 60px; /* 높이 */
-    background: linear-gradient(to right, rgb(244, 226, 244),rgb(91, 19, 91));
+    top: 220px;
+    left: 900px;
+    width: 500px; /* 너비 */
+    height: 70px; /* 높이 */
+    background: linear-gradient(to right, #bec4f5, #5A64B5);
   }
   .stat{
     position: absolute;
-    bottom: 355px;
-    right: 400px;
+    top: 470px;
+    left: 900px;
     border-radius:9px;
-    font-size: 18px;
+    cursor: pointer;
+    font-size: 20px;
     padding: 4px 18px;
     text-align: center;
     color: black;
-    background-color: rgb(214, 169, 214);
+    background-color: #bec4f5;
     border: none;
   
   }
   .dir{
     position: absolute;
-    bottom: 410px;
-    right: 400px;
+    top: 400px;
+    left: 900px;
     font-size: 30px;
     color:black;
+    font-weight: bold;
   }
   .App-link {
     color: #61dafb;
